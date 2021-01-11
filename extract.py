@@ -19,7 +19,7 @@ import seaborn as sns
 #Variables ################################################
 # Modifiez ici la date et/ou le sensor (SDS011 pour avoir les mesures PM10 et PM2.5 des sds011)
 date = "2021-01-09"
-sensor = "SDS011"
+sensor = "SDS011" #type de sensor à extraire
 ###########################################################
 
 #Constantes ###############################################
@@ -27,9 +27,9 @@ lat1,lon1 = 45.2433608,5.614488 #Point Nord Ouest
 lat2,lon2 = 45.0899558,5.895916 #Point Sud Est
 box1 = [lat1,lon1,lat2,lon2]
 
-metro = [45.2496378,5.598292,45.0760708,5.90253]
-voironnais = [45.3889537,5.45502,45.3015058,5.691215]
-ra = [46.4848047,3.214603,44.5976102,6.9796573]
+metro = [45.2496378,5.598292,45.0760708,5.90253]  #EPCI Métropole grenobloise
+voironnais = [45.3889537,5.45502,45.3015058,5.691215] #EPCI Pays voironnais
+ra = [46.4848047,3.214603,44.5976102,6.9796573] #Region Auvergne-Rhône-Alpes
 ###########################################################
 
 os.makedirs(date,exist_ok=True) #repertoire dans lequel sont sockées les infos, graphs, cartes etc...
